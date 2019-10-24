@@ -110,9 +110,6 @@
                     <scriptFile>${basedir}/src/main/scripts/postinstall</scriptFile>
                     <fileEncoding>utf-8</fileEncoding>
                   </postinstallScriptlet>
-                  <postinstallScriptlet combine.self="override">
-                    <script>conda update conda -y &amp;&amp; conda install -y --file /application/dependencies/python/packages.list &amp;&amp; cp /application/notebook/etc/snappy.ini /opt/anaconda/lib/python2.7/site-packages/snappy/snappy.ini</script>
-                  </postinstallScriptlet>
                   <!-- Set here the dependencies installed with 'sudo yum install'-->
                   <requires>
                     <require>miniconda</require>
