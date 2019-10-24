@@ -117,6 +117,7 @@
                     <require>snap6</require>
                     <require>gdal</require>
                     <require>wget</require>
+                    <require>libXt</require>
                   </requires>
                 </configuration>
               </execution>
