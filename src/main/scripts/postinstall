@@ -16,3 +16,5 @@ unzip MCR_R2018a_glnxa64_installer.zip
 ./install -console -mode silent -agreeToLicense yes -destinationFolder /opt/ 
 
 rm -rf /tmp/matlab_runtime_94
+
+conda clean --all -y
