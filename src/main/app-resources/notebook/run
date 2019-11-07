@@ -131,7 +131,10 @@ def stage_in():
     for reference in references:
       ciop.log('INFO', 'The input reference is: ' + reference)    
       
-      search = ciop.search(end_point = reference, params = [], output_fields='enclosure,identifier', model='GeoTime')
+      search = ciop.search(end_point = reference, 
+                           params = [], 
+                           output_fields='enclosure,identifier', 
+                           model='GeoTime')
       assert(search), sys.exit(ERR_RESOLUTION)
   
       ciop.log('INFO', 'Retrieve %s from %s' % (search[0]['identifier'], search[0]['enclosure']))
